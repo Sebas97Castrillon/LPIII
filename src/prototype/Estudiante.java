@@ -19,7 +19,16 @@ public class Estudiante {
     }
 
     @Override
-    protected Object clone() {
+    public Object clone() {
         return new Estudiante(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Estudiante{" +
+                "nombre='" + nombre + '\'' +
+                ", id=" + id +
+                ", creditos=" + creditos +
+                '}';
     }
 }
